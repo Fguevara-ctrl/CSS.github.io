@@ -1,1 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Core Signal Solutions — IT consulting, systems integration and managed services to help your business scale securely." />
+    <meta name="theme-color" content="#0b2545" />
+    <title>Core Signal Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root{
+        --bg:#f6f9fc;
+        --card:#ffffff;
+        --accent:#0b6cff;
+        --muted:#6b7280;
+        --dark:#0b2545;
+        --glass: rgba(255,255,255,0.7);
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+        background:linear-gradient(180deg,var(--bg),#eef4fb);
+        color:#0f1724;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+        line-height:1.45;
+      }
+      .container{max-width:1100px;margin:0 auto;padding:28px}
+      header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+      .brand{display:flex;align-items:center;gap:12px}
+      .logo{width:44px;height:44px;border-radius:8px;background:var(--dark);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+      nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+      .hero{display:grid;grid-template-columns:1fr;gap:28px;align-items:center;padding:40px 0}
+      .hero-inner{background:linear-gradient(180deg,rgba(11,38,69,0.04),transparent);padding:28px;border-radius:12px}
+      h1{font-size:clamp(28px,4vw,44px);margin:0 0 12px}
+      p.lead{color:var(--muted);margin:0 0 18px}
+      .cta{display:inline-flex;gap:10px;align-items:center;background:var(--accent);color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+      .secondary{background:transparent;border:1px solid rgba(11,38,69,0.08);padding:10px 14px;border-radius:10px;color:var(--dark);text-decoration:none}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:28px}
+      .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(12,22,45,0.06)}
+      .service-title{font-weight:700;margin:8px 0}
+      footer{border-top:1px solid rgba(12,22,45,0.06);padding:22px 0;margin-top:40px;color:var(--muted)}
+      .services-list{display:flex;flex-direction:column;gap:12px}
+      .about{margin-top:26px}
+      .contact-card{display:flex;flex-direction:column;gap:12px}
+      input,textarea{padding:10px;border-radius:8px;border:1px solid rgba(12,22,45,0.08);font-family:inherit}
+      button{cursor:pointer;border:0;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;font-weight:600}
+      @media(min-width:900px){
+        .hero{grid-template-columns:1fr 420px}
+      }
+      .small{font-size:13px;color:var(--muted)}
+      .feature-row{display:flex;gap:12px;align-items:flex-start}
+      .icon{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#2dd4bf);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="brand">
+          <img src="CoreSignalSolutionsLogo.png" alt="Core Signal Solutions logo" style="width:80px;height:80px;object-fit:contain;border-radius:8px;background:#fff;padding:8px" />
+          <div>
+            <div style="font-weight:700">Core Signal Solutions</div>
+            <div class="small">IT & Systems Integration</div>
+          </div>
+        </div>
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="secondary">Contact</a>
+        </nav>
+      </header>
+
+      <main class="hero-inner">
+        <div class="hero container" style="padding:0">
+          <section>
+            <h1>Secure, scalable IT solutions that keep your business moving.</h1>
+            <p class="lead">Core Signal Solutions provides consulting, cloud and managed services, and systems integration for Small business. We design resilient architectures and deliver measurable results.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a class="cta" href="#contact">Get a Quote</a>
+              <a class="secondary" href="#services">Our Services</a>
+            </div>
+
+            <div class="grid" style="margin-top:22px">
+              <div class="card">
+                <div class="feature-row">
+                  <div class="icon">☁️</div>
+                  <div>
+                    <div class="service-title">Cloud & DevOps</div>
+                    <div class="small">Migration, automation, CI/CD and scalable cloud architectures.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="feature-row">
+                  <div class="icon">🔒</div>
+                  <div>
+                    <div class="service-title">Security & Compliance</div>
+                    <div class="small">Zero-trust design, audits, and compliance support (SOC2, ISO).</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="feature-row">
+                  <div class="icon">🧩</div>
+                  <div>
+                    <div class="service-title">Systems Integration</div>
+                    <div class="small">Connecting tools, data pipelines and legacy systems into unified workflows.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="feature-row">
+                  <div class="icon">🛠️</div>
+                  <div>
+                    <div class="service-title">Managed Services</div>
+                    <div class="small">Proactive monitoring, incident response, and 24/7 operations support.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="card" style="height:100%" id="contact">
+            <h3 style="margin-top:0">Contact & Quick Quote</h3>
+            <div class="small">Tell us a bit about your needs and we'll get back within 1 business day.</div>
+            <form class="contact-card" onsubmit="handleSubmit(event)">
+              <input type="text" id="name" placeholder="Your name" required />
+              <input type="email" id="email" placeholder="Email" required />
+              <input type="text" id="company" placeholder="Company (optional)" />
+              <textarea id="message" rows="5" placeholder="Brief project summary" required></textarea>
+              <div style="display:flex;gap:8px">
+                <button type="submit">Request Quote</button>
+                <a class="secondary" href="mailto:Frank@coresignalsolutions.com">Email Us</a>
+              </div>
+            </form>
+            <div id="note" class="small" style="display:none;color:green;margin-top:8px">Thanks — we'll be in touch shortly.</div>
+          </aside>
+        </div>
+
+        <div id="services" class="container">
+          <div class="about card">
+            <h3 style="margin-top:0">How we work</h3>
+            <p class="small">We combine pragmatic engineering with strong governance. Our engagement model focuses on fast delivery, knowledge transfer, and measurable ROI — whether you need a 12-week lift-and-shift, or ongoing managed operations.</p>
+            <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+              <div class="card" style="flex:1;min-width:220px">Assessment & Roadmap</div>
+              <div class="card" style="flex:1;min-width:220px">Implementation & Migration</div>
+              <div class="card" style="flex:1;min-width:220px">Operate & Optimize</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="container">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <div>
+            <strong>Core Signal Solutions</strong>
+            <div class="small">Providing reliable IT & integration services</div>
+          </div>
+          <div class="small">© <span id="year"></span> Core Signal Solutions — All rights reserved.</div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      function handleSubmit(e){
+        e.preventDefault();
+        var name = document.getElementById('name').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var message = document.getElementById('message').value.trim();
+        if(!name || !email || !message){
+          alert('Please complete name, email and message.');
+          return;
+        }
+        // Minimal client-side action: show a thank-you note and open mailto as fallback
+        var note = document.getElementById('note');
+        note.style.display = 'block';
+        setTimeout(function(){note.style.display='none';},5000);
+        var body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nMessage: '+message);
+        window.open('mailto:Frank@coresignalsolutions.com?subject='+encodeURIComponent('Website contact from '+name)+'&body='+body,'_blank');
+        e.target.reset();
+      }
+    </script>
+  </body>
+</html>
 
